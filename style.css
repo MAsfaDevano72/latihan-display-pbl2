@@ -2,9 +2,11 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: 70px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -14,6 +16,12 @@ body {
     padding: 10px 0;
     background-color: burlywood;
     font-family: "Poppins", sans-serif;
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    right: 0;     
+    z-index: 1;
+    width: 100%;
 }
 .header h2 {
     padding-left: 20px;
@@ -62,7 +70,7 @@ body {
 .content p span {
     font-size: 12px;
 }
-#about {
+#about, #service {
     background-color: cornsilk;
 }
 
@@ -101,8 +109,57 @@ body {
     display: flex;
     gap: 250px;
     margin: 5px;
-    height: 400px;
+    height: 350px;
 }
 .card {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5)
+}
+
+.contact {
+    background-color: #fff;
+    height: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+button {
+    padding: 5px 5px;
+    border: none;
+    background-color: #aaa9a9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #cecbcb;
 }
