@@ -10,12 +10,21 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
         .header {
+            display: flex;
+            justify-content: space-between;
+            justify-items: baseline;
+            height: 10vh;
             padding: 10px 0;
             background-color: burlywood;
             font-family: 'Poppins', sans-serif;
+        }
+        .header h2 {
+            padding-left: 20px;
+            font-weight: 600;
         }
         .header ul {
             text-align: right;
@@ -40,11 +49,26 @@
             text-decoration: none;
             color: black;
         }
+        .hero {
+            width: 100%;
+        }
+
+        .content {
+            padding: 10px;
+            position: relative
+        }
+
+        .content img {
+            
+            width: 600px;
+            height: 300px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
+            <h2>My Websites</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -52,6 +76,14 @@
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        </div>
+
+        <div class="hero">
+            <div class="content">
+                <img src="gurun2.jpg" alt="">
+                <h1>Welcome to My Website</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non beatae neque voluptatibus, esse debitis, officiis omnis eius ut accusantium vitae enim assumenda sint sed nostrum itaque maiores voluptatem aliquam quis! Doloremque in quam iure similique officia aliquam illum aspernatur possimus pariatur ut odit illo, inventore, dolorum odio adipisci quaerat fuga?</p>
+            </div>
         </div>
     </div>
 </body>
